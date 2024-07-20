@@ -1,0 +1,53 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  width: 18rem;
+}
+.card-title {
+  font-weight: 600;
+}
+.card-text {
+  font-size: 0.87rem;
+  text-align: left;
+}
+.container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+}
+.excluded {
+  color: hsl(195, 4%, 78%);
+}
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.btn {
+  border-radius: 2rem;
+  width: 100%;
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  #root {
+    padding: 0;
+    margin: 2rem auto;
+  }
+  .card {
+    padding: 3px;
+  }
+}
